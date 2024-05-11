@@ -1,22 +1,32 @@
 import React from 'react'
-
+import {ReactMediaRecorder} from 'react-media-recorder-2'
 const Item = () => {
   return (
     <>
-      <div class="flex gap-4 justify-center mt-[60px]">
+     <ReactMediaRecorder 
+     
+     screen
+     render={({status,startRecording,stopRecording,mediaBlobUrl}) =>(
+      <div>
+        <div className='ml-[500px] absolute top-[200px]'>
+        <video src={mediaBlobUrl} autoPlay loop controls></video>
+      </div>
+        <div class="flex gap-4 justify-center mt-[60px]">
+        
        <div class="flex gap-1">
         <img class="w-5 h-6" src="assets/Frame 113.png" alt=""/>
-        <p>Record</p>
+        <button onClick={startRecording} >Record</button>
       </div>
       <div class="flex gap-1">
-        <img class="w-5 h-6" src="assets/photo_camera.png" alt=""/>
-        <p>Capture</p> 
+        <img class="w-5 h-6" src="assets/Frame 113.png" alt=""/>
+        <button onClick={stopRecording} >Stop record</button> 
       </div>
-      <div class="flex gap-1">
-        <img class="w-5 h-6" src="assets/view_in_ar.png" alt=""/>
-        <p>AR View</p> 
-      </div> 
-    </div>
+
+      </div>
+      </div>
+      )}
+     />
+     
     </>
   )
 }

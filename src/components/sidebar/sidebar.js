@@ -2,8 +2,8 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <aside className="text-white w-[50] h-full flex flex-col" >
-     <div className="">
+    <aside className="text-white w-[50] h-full flex flex-col " >
+     <div className="inline-block">
       <ul className="flex flex-col gap-4 p-4 space-y-2">
         <li>
           <p className="text-blue-700 text-xl font-normal font-family: 'Satoshi', sans-serif;">P<span className="text-black">SE</span></p>

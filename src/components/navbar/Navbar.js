@@ -3,10 +3,11 @@ import Sidebar from '../sidebar/sidebar'
 
 const Navbar = () => {
   return (
-    <div className='flex flex-row'> 
+    <>
+    <div className='flex flex-row relative'> 
       <Sidebar/>
     <div class="flex-1 p-6 ">
-      <div class="flex justify-between">
+      <div class="flex justify-between ">
          <div class="flex gap-4 shadow-2xl p-1">
           <p class="text-blue-700 text-xl font-family: 'Satoshi', sans-serif leading-6 font-medium ">Surgi<spam class="text-black font-family: 'Satoshi', sans-serif;">Plan</spam></p>
           <p class="text-gray-400 ">|</p>
@@ -38,7 +39,7 @@ const Navbar = () => {
       </div> 
       </div>
       </div>
-
+      </>
   )
 }
 export default Navbar
