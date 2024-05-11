@@ -8,11 +8,10 @@ const Item = () => {
      screen
      render={({status,startRecording,stopRecording,mediaBlobUrl}) =>(
       <div>
-        <div className='ml-[500px] absolute top-[px]'>
+        <div className='ml-[500px] absolute top-[300px]'>
         <video src={mediaBlobUrl} autoPlay loop controls></video>
       </div>
         <div class="flex gap-4 justify-center mt-[60px]">
-        
        <div class="flex gap-1">
         <img class="w-5 h-6" src="assets/Frame 113.png" alt=""/>
         <button onClick={startRecording} >Record</button>
