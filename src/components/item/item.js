@@ -8,7 +8,7 @@ const Item = () => {
      screen
      render={({status,startRecording,stopRecording,mediaBlobUrl}) =>(
       <div>
-        <div className='ml-[500px] absolute top-[200px]'>
+        <div className='ml-[500px] absolute top-[px]'>
         <video src={mediaBlobUrl} autoPlay loop controls></video>
       </div>
         <div class="flex gap-4 justify-center mt-[60px]">
